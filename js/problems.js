@@ -27,3 +27,38 @@ console.log("Addition: " + (num + str));
 console.log("Subtraction: " + (num - str));
 console.log("Are they Equal?: " + (num == str));
 console.log("Are they strictly Equal?: " + (num === str));
+
+
+//Problem 4
+
+let billAmount = 32.85;
+let tipRate = 0.15;
+let people = 2;
+let tipAmount = billAmount * tipRate;
+let totalBill = billAmount + tipAmount;
+let perPerson = totalBill / people;
+console.log("Tip: $", tipAmount);
+console.log("Total: $", totalBill);
+console.log("Each Person Pays: $", perPerson);
+
+
+//Problem 5
+
+let price = 15;
+let taxRate = 0.07;
+let rawTotal = price + (price * taxRate);
+let roundTotal = rawTotal.toFixed(2);
+console.log("Price: ", price);
+console.log("Tax ", taxRate);
+console.log("Total: ", roundTotal);
+
+
+//Problem 6
+
+let password = prompt("Enter a new Password");
+if(password.length >= 6){
+    console.log("This Password is Valid")
+}
+else{
+    console.log("This Password is not Valid")
+}
